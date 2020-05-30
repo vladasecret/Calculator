@@ -1,0 +1,82 @@
+мая 30, 2020 8:59:57 PM Main.main loadLogFile
+INFO: Logging config file is loaded.
+мая 30, 2020 8:59:58 PM Main.main getScanner
+INFO: Read from file src/TEST.txt.
+мая 30, 2020 8:59:58 PM Main.CmdFactory <clinit>
+INFO: "Cmp.properties" is loaded
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [DEFINE] created new object.
+мая 30, 2020 8:59:58 PM Commands.Define execute
+INFO: DEFINE a 4 (successfully)
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [PUSH] created new object.
+мая 30, 2020 8:59:58 PM Commands.Push execute
+INFO: [a] is pushed.
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [SQRT] created new object.
+мая 30, 2020 8:59:58 PM Commands.Sqrt execute
+INFO: SQRT(4) = 2 (successfully)
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [PRINT] created new object.
+мая 30, 2020 8:59:58 PM Commands.Print execute
+INFO: Value [2] was printed.
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [PUSH] created new object.
+мая 30, 2020 8:59:58 PM Commands.Push execute
+INFO: [6] is pushed.
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [PUSH] created new object.
+мая 30, 2020 8:59:58 PM Commands.Push execute
+INFO: [6] is pushed.
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [*] created new object.
+мая 30, 2020 8:59:58 PM Commands.Multiplication execute
+INFO: 6 * 6 = 36 (successfully)
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [PUSH] created new object.
+мая 30, 2020 8:59:58 PM Commands.Push execute
+INFO: [8] is pushed.
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [PUSH] created new object.
+мая 30, 2020 8:59:58 PM Commands.Push execute
+INFO: [8] is pushed.
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [*] created new object.
+мая 30, 2020 8:59:58 PM Commands.Multiplication execute
+INFO: 8 * 8 = 64 (successfully)
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [+] created new object.
+мая 30, 2020 8:59:58 PM Commands.Addition execute
+INFO: 64 + 36 = 100 (successfully)
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [SQRT] created new object.
+мая 30, 2020 8:59:58 PM Commands.Sqrt execute
+INFO: SQRT(100) = 10 (successfully)
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [PRINT] created new object.
+мая 30, 2020 8:59:58 PM Commands.Print execute
+INFO: Value [10] was printed.
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [DEFINE] created new object.
+мая 30, 2020 8:59:58 PM Commands.Define execute
+INFO: DEFINE ZERO 0 (successfully)
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [PUSH] created new object.
+мая 30, 2020 8:59:58 PM Commands.Push execute
+INFO: [ZERO] is pushed.
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [SQRT] created new object.
+мая 30, 2020 8:59:58 PM Commands.Sqrt execute
+INFO: SQRT(0) = 0 (successfully)
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [PRINT] created new object.
+мая 30, 2020 8:59:58 PM Commands.Print execute
+INFO: Value [0] was printed.
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [POP] created new object.
+мая 30, 2020 8:59:58 PM Commands.Pop execute
+INFO: [0] is pushed.
+мая 30, 2020 8:59:58 PM Main.CmdFactory getCommand
+INFO: For command [PRINT] created new object.
+мая 30, 2020 8:59:58 PM Commands.Print execute
+INFO: Value [10] was printed.
