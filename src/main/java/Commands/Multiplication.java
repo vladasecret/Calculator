@@ -17,16 +17,13 @@ public class Multiplication implements Command {
             throw new IncorrectNumOfArgsException("You can't use " + args.toString()
                     + ". Multiplication uses parameters from stack.");
         }
-        double a;
-        double b;
-        try {
-            a = context.popNum();
-            b = context.popNum();
-        }
-        catch (StackEmptyException e){
-            throw new StackEmptyException("Can't execute multiplication");
-        }
+        if (context.stackSize() < 2)
+            throw new StackEmptyException("Can't execute multiplication.");
+
+        double a = context.popNum();
+        double b = context.popNum();
+
         context.pushNum(a * b);
-        LOGGER.log(Level.INFO, "{0} * {1} = {2} (successfully)", new Object[]{a, b, a * b});
+        LOGGER.log(Level.INFO, "Multiplication: {0} * {1} = {2} (successfully)", new Object[]{a, b, a * b});
     }
 }
