@@ -21,6 +21,7 @@ public class Context {
     }
 
     public void pushNum(double num) {
+
         stack.push(num);
     }
 

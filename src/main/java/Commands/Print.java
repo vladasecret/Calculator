@@ -14,16 +14,15 @@ public class Print implements Command {
 
 
     public void execute(Context context, List<String> args) throws CommandException {
-        if (args.size() != 0){
+        if (args.size() != 0) {
             throw new IncorrectNumOfArgsException("PRINT has no parameters.");
         }
-        try {
-            double value = context.getNum();
-            System.out.println(value);
-            LOGGER.log(Level.INFO, "Value [{0}] was printed.", value);
-        }
-        catch (StackEmptyException exc){
+
+        if (context.stackSize() == 0)
             throw new StackEmptyException("Can't execute PRINT");
-        }
+
+        double value = context.getNum();
+        System.out.println(value);
+        LOGGER.log(Level.INFO, "Value [{0}] was printed.", value);
     }
 }

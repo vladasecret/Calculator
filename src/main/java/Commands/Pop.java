@@ -19,12 +19,10 @@ public class Pop implements Command {
         if (args.size() != 0){
             throw new IncorrectNumOfArgsException("POP has no parameters.");
         }
-        try {
-            double value = context.popNum();
-            LOGGER.log(Level.INFO, "[{0}] is pushed.", value);
-        } catch (StackEmptyException exs) {
+        if (context.stackSize() == 0)
             throw new StackEmptyException("Can't execute POP");
-        }
+        double value = context.popNum();
+        LOGGER.log(Level.INFO, "POP: [{0}]", value);
     }
 
 }

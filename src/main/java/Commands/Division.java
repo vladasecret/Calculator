@@ -17,16 +17,13 @@ public class Division implements Command{
             throw new IncorrectNumOfArgsException("You can't use " + args.toString()
                     + ". Division uses parameters from stack.");
         }
-        double a;
-        double b;
-        try {
-            a = context.popNum();
-            b = context.popNum();
-        }
-        catch (StackEmptyException e){
-            throw new StackEmptyException("Can't execute division");
-        }
+
+        if (context.stackSize() < 2)
+            throw new StackEmptyException("Can't execute division.");
+
+        double a = context.popNum();
+        double b = context.popNum();
         context.pushNum(b / a);
-        LOGGER.log(Level.INFO, "{0} / {1} = {2} (successfully)", new Object[]{b, a, b / a});
+        LOGGER.log(Level.INFO, "Division: {0} / {1} = {2} (successfully)", new Object[]{b, a, b / a});
     }
 }
